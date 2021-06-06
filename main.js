@@ -1,10 +1,10 @@
 var AWS = require("aws-sdk");
-AWS.config.update({ accesKeyId: '', secretAccessKey: ' ', region: 'Asia Pacific (Mumbai) ap-south-1' });
+AWS.config.update({ accesKeyId: 'AKIA3PL3WK5VXEJP44HU', secretAccessKey: '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 ', region: 'Asia Pacific (Mumbai) ap-south-1' });
 var s3 = new AWS.S3();
 var params = {
     Bucket: "profile-images.test.com",
     Delimiter: "/",
-    prefix: ""
+    prefix: " "
 };
 s3.listObjects(params, function (err, data) {
     if (err)
