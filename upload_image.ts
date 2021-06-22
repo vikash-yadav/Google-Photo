@@ -4,7 +4,7 @@ AWS.config.update({ region: "REGION" });
 
 const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
-var uploadParams = { Bucket: process.argv[2], Key: "", Body: "" };
+var uploadParams = { Bucket:"akatest",Body:"", Key: "" };
 
 var file = process.argv[3];
 
